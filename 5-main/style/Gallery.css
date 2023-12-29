@@ -1,0 +1,214 @@
+#Gallery,#third_list{
+    display: none;
+}
+#Gallery{
+    height: 200vh;
+}
+#Gallery p {
+    color: #eee;
+    font-family: 'Dancing Script', cursive;
+    margin: 2rem 0 0 3rem;
+    max-width: 80%;
+    letter-spacing: 3px;
+    font-size: 25px;
+}
+#Gallery .photos_section {
+    background-color: rgba(255, 255, 255, 0);
+    width: 80vw;
+    height: 90vh;
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    grid-template-rows: 2fr 5fr;
+    grid-gap: 20px;
+}
+#Gallery .photos_section div:nth-child(1),
+#Gallery .photos_section div:nth-child(2),
+#Gallery .photos_section div:nth-child(3){
+    border-radius: 20px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+#Gallery .photos_section .one {
+    grid-column: 1/3;
+    grid-row: 1/2;
+    background: url(Gallery/4-1.jpg) black;
+    aspect-ratio: 16/9;
+}
+#Gallery .photos_section .two {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    background: url(Gallery/5-1.jpg) black;
+    aspect-ratio: 9/16;
+}
+#Gallery .photos_section .three {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    aspect-ratio: 9/16;
+    background: url(Gallery/6-1.jpg) black;
+}
+#Gallery .photos_section .remain{
+    grid-column: 3/4;
+    grid-row: 1/3;
+    /* background-color: rgb(255, 145, 0); */
+}
+#Gallery .photos_section .remain .cards_one {
+    width: 100%;
+    height: 45vh;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+#Gallery .photos_section .remain .cards_one div{
+    border-radius: 20px;
+}
+#Gallery .photos_section .remain .cards_one div:nth-child(1) {
+    width: 12rem;
+    height: 20rem;
+    background-color: blue;
+    transform: translate(14px, 12px) rotate(5deg);
+    position: absolute;
+    z-index: 4;
+    aspect-ratio: 9/16;
+    background: url(cards_one/1.jpg) black;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition:1s cubic-bezier(0.77, 0.28, 0.73, 1.1);
+    transition-delay:.5s;
+}
+#Gallery .photos_section .remain .cards_one div:nth-child(2) {
+    width: 12rem;
+    height: 20rem;
+    background-color: rgb(0, 255, 242);
+    transform: translate(4px, 5px) rotate(0deg);
+    position: absolute;
+    z-index: 3;
+    aspect-ratio: 9/16;
+    background: url(cards_one/2.jpg) black;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition:1s cubic-bezier(0.77, 0.28, 0.73, 1.1);
+    transition-delay:.5s;
+}
+#Gallery .photos_section .remain .cards_one div:nth-child(3) {
+    width: 12rem;
+    height: 20rem;
+    background-color: rgb(94, 255, 0);
+    transform: translate(-16px, -2px) rotate(-2deg);
+    position: absolute;
+    z-index: 2;
+    aspect-ratio: 9/16;
+    background: url(cards_one/3.jpg) black;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition:1s cubic-bezier(0.77, 0.28, 0.73, 1.1);
+    transition-delay:.5s;
+}
+#Gallery .photos_section .remain .cards_one div:nth-child(4) {
+    width: 12rem;
+    height: 20rem;
+    background-color: rgb(255, 123, 0);
+    transform: translate(-25px, 0px) rotate(-10deg);
+    position: absolute;
+    z-index: 1;
+    aspect-ratio: 9/16;
+    background: url(cards_one/4.jpg) black;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition:1s cubic-bezier(0.77, 0.28, 0.73, 1.1);
+    transition-delay:.5s;
+}
+#Gallery .photos_section .remain .cards_one div:nth-child(5) {
+    width: 10rem;
+    height: 10rem;
+    background-color: rgb(255, 123, 0);
+    transform: translate(0px, 0px) rotate(0deg);
+    position: absolute;
+    z-index: -1;
+    aspect-ratio: 1/1;
+    background: url(cards_one/5.jpg) black;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition:1s cubic-bezier(0.77, 0.28, 0.73, 1.1);
+    transition-delay:.9s;
+}
+#Gallery .photos_section .remain .cards_one div:nth-child(6) {
+    width: 10rem;
+    height: 10rem;
+    background-color: rgb(0, 255, 255);
+    transform: translate(0px, 0px) rotate(0deg);
+    position: absolute;
+    z-index: -1;
+    aspect-ratio: 1/1;
+    background: url(cards_one/6.jpg) black;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition:1s cubic-bezier(0.77, 0.28, 0.73, 1.1);
+    transition-delay:1.7s;
+}
+#Gallery .photos_section .remain .cards_one div:nth-child(7) {
+    width: 10rem;
+    height: 10rem;
+    background-color: rgb(94, 255, 0);
+    transform: translate(0px, 0px) rotate(0deg);
+    position: absolute;
+    z-index: -1;
+    aspect-ratio: 1/1;
+    background: url(cards_one/7.jpg) black;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition:1s cubic-bezier(0.77, 0.28, 0.73, 1.1);
+    transition-delay:1.9s;
+}
+#Gallery .photos_section .remain .cards_one div:nth-child(8) {
+    width: 10rem;
+    height: 10rem;
+    background-color: rgb(255, 0, 0);
+    transform: translate(0px, 0px) rotate(0deg);
+    position: absolute;
+    z-index: -1;
+    aspect-ratio: 1/1;
+    background: url(cards_one/8.jpg) black;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition:1s cubic-bezier(0.77, 0.28, 0.73, 1.1);
+    transition-delay:1.3s;
+}
+#Gallery .photos_section .remain .cards_one:hover div:nth-child(1) {
+    transform: translate(16rem, 4rem) rotate(22deg);
+}
+#Gallery .photos_section .remain .cards_one:hover div:nth-child(2) {
+    transform: translate(6rem, 1rem) rotate(10deg);
+}
+#Gallery .photos_section .remain .cards_one:hover div:nth-child(3) {
+    transform: translate(-3rem, 0.5rem) rotate(-10deg);
+}
+#Gallery .photos_section .remain .cards_one:hover div:nth-child(4) {
+    transform: translate(-12rem, 3.4rem) rotate(-27deg);
+}
+#Gallery .photos_section .remain .cards_one:hover div:nth-child(5) {
+    transform: translate(8rem, 20rem) rotate(387deg);
+}
+#Gallery .photos_section .remain .cards_one:hover div:nth-child(6) {
+    transform: translate(9rem, 33rem) rotate(387deg);
+}
+#Gallery .photos_section .remain .cards_one:hover div:nth-child(7) {
+    transform: translate(-9rem, 33rem) rotate(-387deg);
+}
+#Gallery .photos_section .remain .cards_one:hover div:nth-child(8) {
+    transform: translate(-8rem, 20rem) rotate(-387deg);
+}
+

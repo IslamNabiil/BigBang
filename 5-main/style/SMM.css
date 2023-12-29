@@ -1,0 +1,282 @@
+#SMM,#second_list{
+    display: none;
+}
+
+#SMM{
+    height: 240vh;
+}
+#SMM .beg {
+    box-sizing: border-box;
+    padding: 2rem 3rem 0 0;
+    font-size: 23px;
+}
+#SMM .beg span{
+    color: #6004db;
+    font-weight: bold;
+}
+/* #SMM .wrapper *{
+    box-sizing: border-box;
+} */
+
+.wrapper {
+    margin-top: 1rem;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background: url(reels/1.mp4); */
+    /* background: url(background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 25px;
+    box-shadow: 12px 9px 11px 1px #7c7c77; */
+}
+
+.container {
+    height: 400px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: start;
+}
+
+.card {
+    width: 80px;
+    border-radius: .75rem;
+    background-size: cover;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 2rem;
+    margin: 0 10px;
+    display: flex;
+    align-items: flex-end;
+    transition: .6s cubic-bezier(.28,-0.03,0,.99);
+    box-shadow: 0px 10px 30px -5px rgba(0,0,0,0.8);
+}
+
+.card > .row {
+    color: white;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.card > .row > .icon {
+    background: #223;
+    color: white;
+    border-radius: 50%;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
+
+.card > .row > .description {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    height: 80px;
+    width: 520px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition-delay: .3s;
+    transition: all .3s ease;
+}
+
+.description p {
+    color: #b0b0ba;
+    padding-top: 5px;
+    /* padding-bottom: 5px; */
+    font-weight: 600;
+}
+
+.description h4 {
+    text-transform: uppercase;
+}
+
+#SMM input {
+    display: none;
+}
+
+input:checked + label {
+    width: 600px;
+}
+
+input:checked + label .description {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
+.card[for="c1"] {
+    background-image: url('img1.jpg');
+}
+.card[for="c2"] {
+    background-image: url('./img2.jpg');
+}
+.card[for="c3"] {
+    background-image: url('./img3.jpg');
+}
+.card[for="c4"] {
+    background-image: url('./img4.jpg');
+}
+.card[for="c5"] {
+    background-image: url('./img6.jpg');
+}
+
+
+
+
+#reels {
+    width: 100%;
+    height: 30rem;
+    margin-top: 5rem;
+    /* background-color: blue; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#reels button{
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    margin: 0 20px;
+    border: 2px solid black;
+}
+#reels button:hover{
+    background-color: #223;
+    color: aliceblue;
+    border: 2px solid white;
+}
+#reels .videos {
+    width: 60rem;
+    height: 100%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#reels .videos div {
+    width: 10rem;
+    height: 80%;
+    /* background-color: white; */
+    border-radius: 20px;
+    box-shadow: 6px 5px 11px 3px black;
+    /* margin: 20px 0; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    overflow: hidden;
+}
+#reels .videos .mid{
+    height: 90%;
+}
+#reels .videos a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+video{
+    /* width: 100%; */
+    height: 100%;
+}
+
+/* rock paper scissors game*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+.body *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    direction: ltr;
+}
+.body {
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background: #f6f7fb; */
+  }
+.rock_game {
+  padding: 2rem 7rem;
+  border-radius: 14px;
+  background: #fff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+.result_images {
+  display: flex;
+  column-gap: 7rem;
+}
+.rock_game.start .user_result {
+  transform-origin: left;
+  animation: userShake 0.7s ease infinite;
+}
+@keyframes userShake {
+  50% {
+    transform: rotate(10deg);
+  }
+}
+
+.rock_game.start .cpu_result {
+  transform-origin: right;
+  animation: cpuShake 0.7s ease infinite;
+}
+@keyframes cpuShake {
+  50% {
+    transform: rotate(-10deg);
+  }
+}
+.result_images img {
+  width: 100px;
+}
+.user_result img {
+  transform: rotate(90deg);
+}
+.cpu_result img {
+  transform: rotate(-90deg) rotateY(180deg);
+}
+.result {
+  text-align: center;
+  /* font-size: 2rem; */
+  color: #7d2ae8;
+  margin-top: 1.5rem;
+}
+
+.option_image img {
+  width: 50px;
+}
+.option_images {
+  display: flex;
+  align-items: center;
+  margin-top: 2.5rem;
+  justify-content: space-between;
+}
+.rock_game.start .option_images {
+  pointer-events: none;
+}
+.option_image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: 0.5;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+.option_image:hover {
+  opacity: 1;
+}
+.option_image.active {
+  opacity: 1;
+}
+.option_image img {
+  pointer-events: none;
+}
+.option_image p {
+  color: #7d2ae8;
+  font-size: 1.235rem;
+  margin-top: 1rem;
+  pointer-events: none;
+}
