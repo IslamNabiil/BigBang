@@ -77,3 +77,42 @@ const secondList = document.getElementById('second_list')
 // const links = document.querySelectorAll('ul li a')
 // const [one,two,three,four] = links
 // console.log(links)
+
+const logo = document.querySelector('.logo')
+const body = document.querySelector('body')
+// if(body.style.filter = 'blur(20px)'){
+//     logo.addEventListener('click',()=>{
+//         body.style.filter = 'none'
+//     })
+// }else if(body.style.filter = 'none'){
+//     logo.addEventListener('click',()=>{
+//         body.style.filter = 'blur(20px)'
+//     })
+// }
+
+// logo.addEventListener('click',()=>{
+//     if(body.style.filter = 'blur(20px)'){
+//         // logo.addEventListener('click',()=>{
+//             body.style.filter = 'none'
+//         // })
+//     }
+//     if(body.style.filter = 'none'){
+//         // logo.addEventListener('click',()=>{
+//             body.style.filter = 'blur(20px)'
+//         // })
+// }
+// })
+
+logo.addEventListener('click',()=>{
+    if(body.classList.contains('blur_body')){
+        // logo.addEventListener('click',()=>{
+            body.classList.remove('blur_body')
+            body.classList.add('emp')
+        // })
+    }else if(body.classList.contains('emp')){
+        // logo.addEventListener('click',()=>{
+            body.classList.remove('emp')
+            body.classList.add('blur_body')
+        // })
+}
+})

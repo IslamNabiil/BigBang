@@ -2,7 +2,7 @@
     display: none;
 }
 #Gallery{
-    height: 200vh;
+    height: 270vh;
 }
 #Gallery p {
     color: #eee;
@@ -212,3 +212,56 @@
     transform: translate(-8rem, 20rem) rotate(-387deg);
 }
 
+
+ul.last_game {
+    margin-top: 10rem;
+    width: 100%;
+    height: 30rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-size: 25px;
+    list-style: none;
+    color: aliceblue;
+    border: 3px black solid;
+    box-sizing: border-box;
+    border-radius: 30px;
+    background: linear-gradient(45deg, cadetblue, #b0b0ba5e);
+}
+ul.last_game li {
+    display: flex;
+    width: 100%;
+    padding-left: 3rem;
+    justify-content: space-between;
+    position: relative;
+}
+ul.last_game li input {
+    position: absolute;
+    right: 6rem;
+    width: 10rem;
+    height: 2.5rem;
+    border-radius: 8px;
+    text-align: center;
+}
+ul.last_game input[type=button] {
+    width: 10rem;
+    height: 2.5rem;
+    border-radius: 12px;
+    font-size: 18px;
+}
+ul.last_game input[type=button]:hover {
+    background: #adade1;
+    color: white;
+    border: 2px white solid;
+}
+#Gallery .lastP {
+    margin: 2rem 0;
+    padding: 0;
+    width: 100%;
+    height: 3rem;
+    text-align: center;
+    max-width: 100%;
+    font-family: 'Teko';
+    font-size: 3rem;
+}
