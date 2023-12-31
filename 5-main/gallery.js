@@ -18,7 +18,7 @@ let topPicBG = [
   "url(style/Gallery/4-9.jpg)",
   "url(style/Gallery/4-10.jpg)",
 ];
-if ((Gallery.style.display != "none")) {
+if ((Gallery.style.display = "none")) {
   setInterval(() => {
     if (xxx < topPicBG.length) {
       topPic.style.cssText = `
