@@ -277,5 +277,3 @@ optionImages.forEach((image, index) => {
     }, 2500);
   });
 });
-const thirdList = document.getElementById('third_list')
-const Gallery = document.getElementById('Gallery')

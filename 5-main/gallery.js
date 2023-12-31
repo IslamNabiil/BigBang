@@ -18,7 +18,7 @@ let topPicBG = [
   "url(style/Gallery/4-9.jpg)",
   "url(style/Gallery/4-10.jpg)",
 ];
-if(Gallery.style.display = 'block'){
+if ((Gallery.style.display != "none")) {
   setInterval(() => {
     if (xxx < topPicBG.length) {
       topPic.style.cssText = `
@@ -33,7 +33,7 @@ if(Gallery.style.display = 'block'){
       xxx = 0;
     }
   }, 3000);
-  
+
   let leftPicBG = [
     "url(style/Gallery/5-1.jpg)",
     "url(style/Gallery/5-2.jpg)",
@@ -62,7 +62,7 @@ if(Gallery.style.display = 'block'){
       }
     }, 3000);
   }, 1000);
-  
+
   let rightPicBG = [
     "url(style/Gallery/6-1.jpg)",
     "url(style/Gallery/6-2.jpg)",
@@ -160,28 +160,27 @@ const answers = [
 //   }
 // }
 
-function lastDance(){
-    if(theLast[0].value > answers[0]){
-        galleryP.innerHTML = "the birthday date is high";
-    } else if (theLast[0].value < answers[0]){
-        galleryP.innerHTML = "the birthday date is low";   
-    } else if (theLast[0].value === answers[0]){
-        if(theLast[1].value > answers[1]){
-            galleryP.innerHTML = 'the first time to say the magic word is high'
-        } else if (theLast[1].value < answers[1]){
-            galleryP.innerHTML = 'the first time to say the magic word is low'
-        } else if (theLast[1].value === answers[1]){
-            if(theLast[2].value > answers[2]){
-                galleryP.innerHTML = 'the first time to send a rec is high'
-            } else if (theLast[2].value < answers[2]){
-                galleryP.innerHTML = 'the first time to send a rec is low'
-            } else if (theLast[2].value === answers[2]){
-                galleryP.innerHTML = "Congrats U've make it all right ... I'm glad U've made it"
-                Gift.style.display = 'block'
-                fourthdList.style.display = 'block'
-            }
-        }
+function lastDance() {
+  if (theLast[0].value > answers[0]) {
+    galleryP.innerHTML = "the birthday date is high";
+  } else if (theLast[0].value < answers[0]) {
+    galleryP.innerHTML = "the birthday date is low";
+  } else if (theLast[0].value === answers[0]) {
+    if (theLast[1].value > answers[1]) {
+      galleryP.innerHTML = "the first time to say the magic word is high";
+    } else if (theLast[1].value < answers[1]) {
+      galleryP.innerHTML = "the first time to say the magic word is low";
+    } else if (theLast[1].value === answers[1]) {
+      if (theLast[2].value > answers[2]) {
+        galleryP.innerHTML = "the first time to send a rec is high";
+      } else if (theLast[2].value < answers[2]) {
+        galleryP.innerHTML = "the first time to send a rec is low";
+      } else if (theLast[2].value === answers[2]) {
+        galleryP.innerHTML =
+          "Congrats U've make it all right ... I'm glad U've made it";
+        Gift.style.display = "block";
+        fourthdList.style.display = "block";
+      }
     }
+  }
 }
-const Gift = document.getElementById('Gift')
-const fourthdList = document.getElementById('fourth_list')

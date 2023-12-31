@@ -72,8 +72,26 @@ function play(){
     }
 }
 
+
+const Gift = document.getElementById('Gift')
+const fourthdList = document.getElementById('fourth_list')
+
+const Gallery = document.getElementById('Gallery')
+const thirdList = document.getElementById('third_list')
+
 const SMM = document.getElementById('SMM')
 const secondList = document.getElementById('second_list')
+
+SMM.style.display = 'none'
+Gallery.style.display = 'none'
+Gift.style.display = 'none'
+
+secondList.style.display = 'none'
+thirdList.style.display = 'none'
+fourthdList.style.display = 'none'
+
+
+
 // const links = document.querySelectorAll('ul li a')
 // const [one,two,three,four] = links
 // console.log(links)

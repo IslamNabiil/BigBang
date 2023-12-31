@@ -1,8 +1,5 @@
-#Gift,#fourth_list{
-    display: none;
-}
-#Gift{
-    height: 200vh;
+#Gift {
+  height: 200vh;
 }
 #Gift .last_message {
   max-width: 80%;
@@ -35,7 +32,6 @@
   width: 100%;
   height: 30px;
   background: #ffffff;
-  
 }
 .base {
   background: #ffffff;
@@ -127,25 +123,25 @@
 .present_box:hover .wrape {
   height: 55px;
 }
-.pull{
-    /* animation: pull linear 1s; */
-    height: 100%;
+.pull {
+  /* animation: pull linear 1s; */
+  height: 100%;
 }
-.throw_away{
-    animation: throwAway linear 1.3s;
+.throw_away {
+  animation: throwAway linear 1.3s;
 }
-.fade{
-    /* animation: fade linear 1s; */
-    transition: .3s;
-    opacity: 0;
+.fade {
+  /* animation: fade linear 1s; */
+  transition: 0.3s;
+  opacity: 0;
 }
-@keyframes throwAway{
-    10%{
-        transform: translateY(-20px);
-    }
-    100%{
-        transform: translateY(-20px) translateX(400%);
-    }
+@keyframes throwAway {
+  10% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(-20px) translateX(400%);
+  }
 }
 
 .final_div {
@@ -169,7 +165,7 @@
   color: aquamarine;
   text-decoration: none;
 }
-.final_p2{
+.final_p2 {
   width: 100%;
   background-color: orange;
 }
