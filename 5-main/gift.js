@@ -4,7 +4,7 @@ const presentBox = document.querySelector(".present_box");
 const cover = document.querySelector(".cover");
 const wrape = document.querySelector(".wrape");
 // console.log(presentBox , cover , wrape)
-if ((Gift.style.display != "none")) {
+if ((Gift.style.display = "none")) {
   setTimeout(() => {
     presentBox.style.opacity = "1";
     cover.style.animation = "shake linear 4s infinite";
