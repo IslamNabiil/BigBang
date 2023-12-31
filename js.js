@@ -1,4 +1,4 @@
-const jan = new Date('Jan 2024, 01 00:00:00').getTime();//get the time you want to count for
+const jan = new Date('Dec 2023, 31 10:00:00').getTime();//get the time you want to count for
 
 function time(){
     //declare the time now and the gap between now and after
