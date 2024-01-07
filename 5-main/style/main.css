@@ -8,7 +8,7 @@ html {
 .blur_body {
   /* filter: blur(50px); */
   /* fill: #34e162; */
-  opacity: 0;
+  opacity: 1;
 }
 .emp {
   /* filter: none; */
